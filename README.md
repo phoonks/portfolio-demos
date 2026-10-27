@@ -7,7 +7,7 @@ client name and testimonial on these pages is fictional.
 | Folder | What it is | Highlights |
 | --- | --- | --- |
 | [`demo-saas/`](demo-saas/) | **Billmint** — landing page for a fictional small-business invoicing tool | Hero, feature grid, 3-tier pricing with monthly/yearly toggle, FAQ accordion, front-end-only contact form with validation |
-| [`demo-company/`](demo-company/) | **Meridian Studio** — profile site for a fictional web design agency | Services, SVG case-study cards, process, about section, testimonials, WhatsApp contact button (`wa.me` link with a placeholder number) |
+| [`demo-company/`](demo-company/) | **Meridian Studio** — profile site for a fictional web design agency | Services, SVG case-study cards, process, about section, testimonials, WhatsApp contact button (`wa.me` link) |
 
 Both sites are plain **HTML + CSS + vanilla JavaScript**. No framework, no build step,
 no dependencies. They are responsive from phone width up and use Google Fonts as the only
