@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billmint — Simple invoicing for small teams</title>
+  <meta name="description" content="Billmint is a fictional invoicing tool. This page is a personal front-end demo project by Kah Seng Phoon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2310b981'/%3E%3Cpath d='M9 10h14M9 16h14M9 22h8' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="logo" aria-label="Billmint home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="8" fill="#10b981"/><path d="M9 10h14M9 16h14M9 22h8" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+        </span>
+        Billmint
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="nav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Start free trial</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Invoicing for freelancers &amp; small teams</span>
+          <h1>Get paid faster, without the spreadsheet headaches.</h1>
+          <p class="lead">Billmint turns your hours and expenses into professional invoices in seconds, chases late payments for you, and keeps your books tidy for tax season.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">Start 14-day free trial</a>
+            <a href="#features" class="btn btn-ghost btn-lg">See how it works</a>
+          </div>
+          <ul class="hero-trust">
+            <li>No credit card required</li>
+            <li>Cancel anytime</li>
+            <li>Set up in 5 minutes</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-bar"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="mock-header">
+                <div>
+                  <div class="mock-title">Invoice #2041</div>
+                  <div class="mock-sub">Acme Design Studio · Due 14 Nov</div>
+                </div>
+                <span class="pill pill-green">Paid</span>
+              </div>
+              <div class="mock-rows">
+                <div class="mock-row"><span>Brand identity design</span><span>$1,800.00</span></div>
+                <div class="mock-row"><span>Landing page build</span><span>$2,400.00</span></div>
+                <div class="mock-row"><span>Hosting setup</span><span>$150.00</span></div>
+                <div class="mock-row total"><span>Total</span><span>$4,350.00</span></div>
+              </div>
+              <div class="mock-chart">
+                <div class="bar" style="--h:40%"></div>
+                <div class="bar" style="--h:65%"></div>
+                <div class="bar" style="--h:50%"></div>
+                <div class="bar" style="--h:80%"></div>
+                <div class="bar" style="--h:70%"></div>
+                <div class="bar active" style="--h:95%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card float-1">
+            <span class="pill pill-green">+ $4,350</span>
+            <span>Payment received</span>
+          </div>
+          <div class="float-card float-2">
+            <span class="pill pill-amber">Reminder sent</span>
+            <span>Invoice #2039 · 3 days overdue</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social proof -->
+    <section class="logos">
+      <div class="container">
+        <p class="logos-label">Built for the way small businesses actually work</p>
+        <ul class="logo-row" aria-label="Example customer types">
+          <li>Design studios</li>
+          <li>Consultants</li>
+          <li>Developers</li>
+          <li>Photographers</li>
+          <li>Tutors</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Features</span>
+          <h2>Everything you need to bill clients, nothing you don't.</h2>
+          <p>Billmint keeps invoicing simple so you can spend more time on the work you actually enjoy.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            </div>
+            <h3>Invoices in seconds</h3>
+            <p>Pick a client, add line items, hit send. Your branding, your currency, your payment terms, all remembered for next time.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>
+            </div>
+            <h3>Automatic reminders</h3>
+            <p>Polite, scheduled nudges go out when an invoice is due or overdue. You never have to write the awkward follow-up email again.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            </div>
+            <h3>Online payments</h3>
+            <p>Clients pay by card or bank transfer straight from the invoice. Funds land in your account and the invoice marks itself as paid.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-6"/></svg>
+            </div>
+            <h3>Clear cash-flow view</h3>
+            <p>See what's paid, what's pending and what's late at a glance. Monthly reports export to CSV for your accountant.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            </div>
+            <h3>Recurring billing</h3>
+            <p>Retainers and subscriptions bill themselves on the schedule you set. Pause, edit or cancel with a single click.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Tax-ready records</h3>
+            <p>Every invoice, expense and payment is stored and searchable. Year-end summaries are one export away.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats band -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div><strong>2×</strong><span>faster average payment time</span></div>
+        <div><strong>5 min</strong><span>to send your first invoice</span></div>
+        <div><strong>0</strong><span>spreadsheets required</span></div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple plans that grow with you.</h2>
+          <p>Start free for 14 days. No credit card needed. Switch plans or cancel whenever you like.</p>
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button class="toggle-btn is-active" data-period="monthly" aria-pressed="true">Monthly</button>
+            <button class="toggle-btn" data-period="yearly" aria-pressed="false">Yearly <span class="save-tag">Save 20%</span></button>
+          </div>
+        </div>
+        <div class="pricing-grid">
+          <article class="plan">
+            <h3>Starter</h3>
+            <p class="plan-desc">For solo freelancers just getting started.</p>
+            <div class="price"><span class="currency">$</span><span class="amount" data-monthly="9" data-yearly="7">9</span><span class="period">/ month</span></div>
+            <a href="#contact" class="btn btn-outline btn-block">Start free trial</a>
+            <ul class="plan-features">
+              <li>Up to 5 clients</li>
+              <li>Unlimited invoices</li>
+              <li>Online card payments</li>
+              <li>Automatic reminders</li>
+              <li>Email support</li>
+            </ul>
+          </article>
+          <article class="plan plan-featured">
+            <span class="plan-badge">Most popular</span>
+            <h3>Pro</h3>
+            <p class="plan-desc">For growing freelancers and small studios.</p>
+            <div class="price"><span class="currency">$</span><span class="amount" data-monthly="24" data-yearly="19">24</span><span class="period">/ month</span></div>
+            <a href="#contact" class="btn btn-primary btn-block">Start free trial</a>
+            <ul class="plan-features">
+              <li>Unlimited clients</li>
+              <li>Recurring invoices &amp; retainers</li>
+              <li>Expense tracking</li>
+              <li>Custom branding &amp; domains</li>
+              <li>Cash-flow reports &amp; CSV export</li>
+              <li>Priority support</li>
+            </ul>
+          </article>
+          <article class="plan">
+            <h3>Team</h3>
+            <p class="plan-desc">For agencies with multiple people billing.</p>
+            <div class="price"><span class="currency">$</span><span class="amount" data-monthly="59" data-yearly="47">59</span><span class="period">/ month</span></div>
+            <a href="#contact" class="btn btn-outline btn-block">Contact sales</a>
+            <ul class="plan-features">
+              <li>Everything in Pro</li>
+              <li>Up to 10 team members</li>
+              <li>Roles &amp; approval workflows</li>
+              <li>Multi-currency invoicing</li>
+              <li>Accountant access</li>
+              <li>Dedicated onboarding</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section testimonial">
+      <div class="container">
+        <blockquote>
+          <p>“I used to lose an afternoon every month chasing invoices. Now Billmint sends the reminders and I just watch the payments come in.”</p>
+          <footer>
+            <div class="avatar" aria-hidden="true">JL</div>
+            <div>
+              <strong>Jamie Lee</strong>
+              <span>Freelance brand designer (fictional testimonial)</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions, answered.</h2>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">
+              Do I need a credit card to start the trial?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" id="faq-1" role="region" aria-labelledby="faq-1-btn">
+              <p>No. Your 14-day trial includes every Pro feature, and we only ask for payment details if you decide to keep using Billmint after the trial ends.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">
+              Which payment methods can my clients use?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" id="faq-2" role="region" aria-labelledby="faq-2-btn">
+              <p>Clients can pay by major credit and debit cards, bank transfer, and popular local payment methods depending on your country. You can also mark invoices as paid manually for cash or cheque.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">
+              Can I import my existing clients and invoices?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" id="faq-3" role="region" aria-labelledby="faq-3-btn">
+              <p>Yes. Upload a CSV of your clients and past invoices and Billmint will map the columns for you. Most people are fully migrated in under an hour.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">
+              What happens if I go over my client limit on Starter?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" id="faq-4" role="region" aria-labelledby="faq-4-btn">
+              <p>We'll let you know when you're close to the limit. You can upgrade to Pro at any time and your existing data moves across instantly, with no downtime.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">
+              Is my data secure?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" id="faq-5" role="region" aria-labelledby="faq-5-btn">
+              <p>All data is encrypted in transit and at rest, backed up daily, and you can export everything you own at any time. We never sell or share your client information.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="eyebrow">Contact</span>
+          <h2>Talk to us about your invoicing.</h2>
+          <p>Tell us a little about your business and we'll get back to you within one working day with a plan recommendation.</p>
+          <ul class="contact-points">
+            <li>Free migration help for Pro and Team plans</li>
+            <li>Live product walkthrough on request</li>
+            <li>Honest answers, no hard sell</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Alex Tan" required>
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" placeholder="alex@studio.com" required>
+              <span class="error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="company">Company (optional)</label>
+            <input type="text" id="company" name="company" placeholder="Studio name">
+          </div>
+          <div class="field">
+            <label for="plan">Which plan are you interested in?</label>
+            <select id="plan" name="plan">
+              <option value="">Not sure yet</option>
+              <option value="starter">Starter</option>
+              <option value="pro">Pro</option>
+              <option value="team">Team</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="How many invoices do you send per month? Anything specific you need?" required></textarea>
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Send message</button>
+          <p class="form-note">Demo only: this form doesn't send anything. It validates in the browser and shows a success message.</p>
+          <div class="form-success" role="status" hidden>
+            <strong>Thanks! Your message is on its way.</strong>
+            <span>In a real product you'd hear back within one working day.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo logo-light">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24"><rect width="32" height="32" rx="8" fill="#10b981"/><path d="M9 10h14M9 16h14M9 22h8" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+          </span>
+          Billmint
+        </a>
+        <p>Simple invoicing for freelancers and small teams.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-note">
+      <p>Billmint is a fictional product. This page is a personal demo project by <a href="https://www.linkedin.com/in/kah-seng-phoon-459a3419b/" target="_blank" rel="noopener">Kah Seng Phoon</a>, built with plain HTML, CSS and JavaScript. Not affiliated with any real company.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
